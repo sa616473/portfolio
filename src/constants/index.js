@@ -17,12 +17,24 @@ import {
   docker,
   meta,
   starbucks,
+  illinois,
+  ucf,
   tesla,
   shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
+  amazon,
+  twitteranalysis,
+  twitter,
+  cs416,
+  lending,
+  skin,
+  tf,
+  cloud,
+  ml,
+  download
 } from "../assets";
 
 export const navLinks = [
@@ -35,26 +47,34 @@ export const navLinks = [
     title: "Work",
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: "education",
+    title: "Education",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "certifications",
+    title: "Certifications",
   },
 ];
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Engineer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Backend Engineer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Machine Learning Engineer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Data Scientist",
     icon: creator,
   },
 ];
@@ -116,58 +136,98 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Full Stack Engineer",
+    company_name: "Pacific Sports",
+    icon: download,
+    iconBg: "",
+    date: "Apr 2023 - Current",
+    points: [
+      "Designed and maintained 25 backend APIs using Node.js to facilitate user onboarding and navigation across the platform. These APIs enabled features such as user sign-up, sign-in, and class registrations ensuring a seamless user experience.",
+      "Developed 15 frontend pages using Next.js, React, and Tailwind CSS, delivering responsive and visually appealing user interfaces.",
+      "Implemented authentication functions in Firebase/Firestore to manage user access and data security within the platform, ensuring streamlined integration with the backend and consistent user authentication across the application",
+      "Implemented CI/CD pipelines using GitHub and Firebase Deploy, enabling automated and efficient deployment processes with continuous integration and delivery.",
+    ],
+  },
+  {
+    title: "Backend Engineer",
+    company_name: "Loadsmart",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Aug 2021 - Feb 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained 7 different metrics that measure the developers' productivity to identify the bottlenecks in the workﬂow using Golang, PostgreSQL, and Superset.",
+      "Built a solution that reverts the deployment of the services through a slack command reducing the time to rollback by 30 minutes using Golang and SlackAPI",
+      "Collaborated with cross-functional teams to migrate the existing systems from Digital Ocean to AWS using Terraform, Kubernetes, Docker, and Bash.",
+      "Developed a micro-service that checks for compliance checks for all projects in the company and notiﬁes teams that need to be compliant using HTML, CSS, JavaScript, React, and Golang.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Software Engineer",
+    company_name: "Qualex",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Dec 2021 - Aug 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Made the ETL process more cost-effective by using AWS Lambda serverless functions to be triggered on object insertion in an S3 bucket and converted the data into parquet format to reduce the training time for the model and saved 3000$ dollars in the form of compute resources and storage space.",
+      "Enhanced the data quality for the NLP models by gathering social media data and extracted keywords to enhance the prediction power by 15% using Python, Numpy, Pandas, Matplotlib, NLTK and TwitterAPI",
+      "Extracted product data from Amazon's best-selling ranks to ﬁnd the critical characteristics of the products to analyze and visualize the consumer trends by using Beautifulsoup4 and selenium",
+      "Developed a web application that identiﬁes skin cancer using pre-trained models from IBM API using HTML, CSS, Flask, and Python",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Tech lead",
+    company_name: "Google Student Developer Club (GSDC)",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Oct 2020 - May 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "As a tech lead of the Google DSC, my main responsibility is to bridge the gap between theory and practical knowledge by providing hands-on experience to students and developers.",
+      "Built a full-stack application tutorial to teach students the full life cycle of a web application using HTML, CSS, JavaScript, and GCP.",
+      "Hosted several workshops, study sessions, and tutorials on React.js, Node.js, Firebase, and Google Cloud Platform.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Software Engineer",
+    company_name: "XI media labs",
     icon: meta,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and implemented 10 different multiplayer augmented reality (AR) games that can be played on both apple and android using Unity and React Native",
     ],
   },
 ];
+
+const educations = [
+  {
+    title: "Masters in computer science and data science",
+    company_name: "University of Illinois urbana champaign",
+    icon: illinois,
+    iconBg: "#E6DEDD",
+    date: "Jan 2022 - May 2024 Expected",
+    points: [
+      " Grade: 3.4",
+      "CS 412: Data Mining",
+      "CS 416: Data Visualization",
+      "CS 498: Advanced Machine Learning",
+      "STAT 420: Statistical Modeling in R",
+      "CS 498: Cloud Computing Applications",
+      "CS 598: Foundations of Data Curation",
+      "CS 598: Practical Statistical Learning",
+      "CS 598: Advanced Bayesian Modeling",
+    ],
+  },
+  {
+    title: "Bachelors in Computer science",
+    company_name: "University of Central Florida",
+    icon: ucf,
+    iconBg: "#E6DEDD",
+    date: "Aug 2016 - May 2021",
+    points: [
+      "Grade: 3.63",
+    ],
+  }
+]
 
 const testimonials = [
   {
@@ -198,68 +258,198 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Twitter analysis tool",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "stramlit",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Twitter API",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: twitteranalysis,
+    source_code_link: "https://github.com/sa616473/twitter_analysis_cffc",
+  },
+  {
+    name: "Amazon web scrapper",
+    description:
+      "",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Web scrapping",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "Pandas",
+        color: "green-text-gradient",
+      },
+    ],
+    image: amazon,
+    source_code_link: "https://github.com/sa616473/amzon100_bsr_scrapping",
+  },
+  {
+    name: "Real or not",
+    description:
+      "",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Flask",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "yello-text-gradient",
+      },
+    ],
+    image: twitter,
+    source_code_link: "https://github.com/sa616473/real_or_not",
+  },
+  {
+    name: "Skin cancer detector",
+    description:
+      "",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tensorflow",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Heroku",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: skin,
+    source_code_link: "https://github.com/sa616473/cancer-detector",
   },
   {
-    name: "Job IT",
+    name: "Lending Club",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "",
     tags: [
       {
-        name: "react",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Scikit-learn",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Numpy & Pandas",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: lending,
+    source_code_link: "https://github.com/sa616473/lendingCompany",
   },
   {
-    name: "Trip Guide",
+    name: "CS 416 data visualization Project",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "",
     tags: [
       {
-        name: "nextjs",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "D3.js",
+        color: "yellow-text-gradient",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: cs416,
     source_code_link: "https://github.com/",
   },
 ];
+const certifications = [
+  {
+    name: "AWS machine learning",
+    description:
+      "",
+    tags: [
+      {
+        name: "Machine Learning",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Data Analysis",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Sage Maker",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: ml,
+    source_code_link: "https://www.credly.com/badges/7f6d4081-1de2-4391-ab9a-05bb3eedcf88?source=linked_in_profile",
+  },
+  {
+    name: " AWS Cloud practitioner",
+    description:
+      "",
+    tags: [
+      {
+        name: "AWS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "EC2",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "S3",
+        color: "green-text-gradient",
+      },
+    ],
+    image: cloud,
+    source_code_link: "https://www.credly.com/badges/247382ed-4ab3-494b-bea1-4b921b6c9e14?source=linked_in_profile",
+  },
+  {
+    name: "Tensorflow Developer",
+    description:
+      "",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Deep learning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tensorflow",
+        color: "yello-text-gradient",
+      },
+    ],
+    image: tf,
+    source_code_link: "https://www.credential.net/51bf5f89-2518-4a0c-b653-44f39fdb228b#gs.uerrr8",
+  },
+  
+];
 
-export { services, technologies, experiences, testimonials, projects };
+
+export { services, technologies, experiences, educations, testimonials, projects, certifications };

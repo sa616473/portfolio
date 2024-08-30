@@ -26,9 +26,25 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+import illinois from "./eductation/illinois.png";
+import ucf from "./eductation/ucf.png";
+
+import amazon from "./amazon.png"
+import twitteranalysis from "./twitteranalysis.png"
+import cs416 from "./cs416.png"
+import twitter from "./twitter.png"
+import lending from "./lending.png"
+import skin from "./skin.png"
+
+import credly from "./credly.png"
+import tf from "./tf.png"
+import ml from "./ml.png"
+import cloud from "./cloud.png"
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import download from "./download.png";
 
 export {
   logo,
@@ -59,4 +75,17 @@ export {
   carrent,
   jobit,
   tripguide,
+  illinois,
+  ucf,
+  amazon,
+  twitteranalysis,
+  cs416,
+  twitter,
+  skin,
+  lending,
+  credly,
+  ml,
+  tf,
+  cloud,
+  download
 };

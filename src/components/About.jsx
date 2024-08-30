@@ -47,9 +47,16 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
+        I'm a skilled Full stack Engineer with experience in python, JavaScript
+        and Golang. 
+        <br></br>
+        <br></br>
+        I'm currently working as a full stack engineer at pacific sports and I have
+        recently graduated with my masters in computer sciece and 
+        data science from University of Illinois Urbana-Champagin.
+        <br></br>
+        <br></br>
+         I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>

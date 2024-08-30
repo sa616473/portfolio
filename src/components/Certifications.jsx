@@ -2,9 +2,9 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { credly } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { certifications } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -33,8 +33,8 @@ const ProjectCard = ({
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
-                src={github}
-                alt="github"
+                src={credly}
+                alt="credly"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
@@ -56,12 +56,12 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+const Certifications = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <h2 className={styles.sectionHeadText}>Certifications.</h2>
       </motion.div>
 
       <div className="w-full flex">
@@ -69,20 +69,17 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          The following projects showcase my skills and experience through
-          projects that strike my passion. Each project is attached to its GitHub repository 
-          and the tech used in the project. It reflects my ability to solve complex problems 
-          and work with different technologies.
+          The following certifications showcase my passion and skills.
         </motion.p>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        {certifications.map((certification, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...certification} />
         ))}
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Works, "work");
+export default SectionWrapper(Certifications, "certification");
