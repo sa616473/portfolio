@@ -142,10 +142,11 @@ const experiences = [
     iconBg: "",
     date: "Apr 2023 - Current",
     points: [
-      "Designed and maintained 25 backend APIs using Node.js to facilitate user onboarding and navigation across the platform. These APIs enabled features such as user sign-up, sign-in, and class registrations ensuring a seamless user experience.",
-      "Developed 15 frontend pages using Next.js, React, and Tailwind CSS, delivering responsive and visually appealing user interfaces.",
+      "Developed a customer relationship management platform (CRM) using Node.js and Firebase to reduce the overhead cost by 80%",
+      "Designed and developed a scheduling board to connect players with coaches and increased individual profits of the coaches by 30%",
+      "Built a messaging platform for the players to communicate with each other and schedule practices using Typescript",
       "Implemented authentication functions in Firebase/Firestore to manage user access and data security within the platform, ensuring streamlined integration with the backend and consistent user authentication across the application",
-      "Implemented CI/CD pipelines using GitHub and Firebase Deploy, enabling automated and efficient deployment processes with continuous integration and delivery.",
+      "Implemented CI/CD pipelines using GitHub and Firebase Deploy, enabling automated and efficient deployment processes with continuous integration and delivery"
     ],
   },
   {
