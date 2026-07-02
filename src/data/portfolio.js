@@ -7,6 +7,7 @@ import ucf from "../assets/eductation/ucf.png";
 import github from "../assets/github.png";
 import credly from "../assets/credly.png";
 import ml from "../assets/ml.png";
+import cloud from "../assets/cloud.png";
 import tf from "../assets/tf.png";
 import havenImg from "../assets/projects/haven.png";
 import drashtaImg from "../assets/projects/drashta.png";
@@ -143,9 +144,14 @@ export const CERTS = [
     href: "https://www.credly.com/badges/7f6d4081-1de2-4391-ab9a-05bb3eedcf88",
   },
   {
+    name: "AWS Cloud Practitioner",
+    img: cloud,
+    tags: ["AWS", "EC2", "S3"],
+    href: "https://www.credly.com/badges/247382ed-4ab3-494b-bea1-4b921b6c9e14",
+  },
+  {
     name: "TensorFlow Developer",
-    img: null,
-    placeholder: "TF · DEVELOPER",
+    img: tf,
     tags: ["Python", "Deep Learning", "TensorFlow"],
     href: "https://www.credential.net/51bf5f89-2518-4a0c-b653-44f39fdb228b",
   },
@@ -176,7 +182,7 @@ export const COMMANDS = {
   certifications: {
     id: "certifications",
     hint: "verified credentials",
-    summary: "aws machine learning specialty · tensorflow developer.",
+    summary: "aws machine learning specialty · aws cloud practitioner · tensorflow developer.",
   },
 };
 
